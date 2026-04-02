@@ -1,0 +1,7 @@
+{
+  "image_size": 256,
+  "total_samples": 30,
+  "train_samples": 20,
+  "val_samples": 5,
+  "test_samples": 5
+}
