@@ -1,0 +1,38 @@
+{
+  "paper_title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+  "config": {
+    "epochs": 6,
+    "batch_size": 2,
+    "learning_rate": 0.01,
+    "image_size": 256,
+    "output_hw": [
+      68,
+      68
+    ],
+    "total_samples": 30,
+    "train_samples": 20,
+    "val_samples": 5,
+    "test_samples": 5,
+    "device": "cpu"
+  },
+  "results": [
+    {
+      "model": "scratch_unet",
+      "test_loss": 0.09044253329435985,
+      "test_dice": 0.9796595374743143,
+      "test_iou": 0.9604407151540121,
+      "test_pixel_accuracy": 0.9686779181162516,
+      "parameter_count": 31030593,
+      "training_seconds": 84.70980260008946
+    },
+    {
+      "model": "reference_repo_unet",
+      "test_loss": 0.1314002921183904,
+      "test_dice": 0.9813782374064127,
+      "test_iou": 0.9636785984039307,
+      "test_pixel_accuracy": 0.9713811874389648,
+      "parameter_count": 31030593,
+      "training_seconds": 105.65012030000798
+    }
+  ]
+}
